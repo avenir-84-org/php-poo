@@ -10,13 +10,11 @@ echo $p2."\n";
 
 echo $p1 -> distance($p2)."\n";
 
-$points = [];
-for ($i = 0; $i < 10; ++$i) {
-    $points[$i] = new Point2D(2, $i);
-}
-
+$p = new Point2D(2, 0);
 $a = new Point2D(2, 0);
-foreach ($points as $p) {
+
+for ($i = 0; $i < 10; ++$i) {
+    $p -> set_y($i);
     echo $p -> distance($a)."\n";
 }
 
