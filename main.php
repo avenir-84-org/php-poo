@@ -21,5 +21,6 @@ function distance2D_v2(Point2D $a, Point2D $b) : float {
 
 echo distance2D(2, 12, 5, 15)."\n";
 echo distance2D_v2($p1, $p2)."\n";
+echo $p1 -> distance2D_v3($p2)."\n";
 
 ?>

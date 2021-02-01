@@ -30,6 +30,15 @@ class Point2D {
         $this -> y = $y;
     }
 
+
+    public function distance2D_v3(Point2D $b) : float {
+        $xa = $this -> x;
+        $xb = $b -> get_x();
+        $ya = $this -> y;
+        $yb = $b -> get_y();
+        return sqrt(($xa-$xb) ** 2 + ($ya-$yb) ** 2);
+    }
+
 }
 
 
