@@ -16,5 +16,19 @@ $A -> randomize();
 
 echo "A: " . $A . "\n";
 
+$B = new Point2D(0, 0);
+$B -> randomize20_30();
+
+echo "B: " . $B . "\n";
+
+function area(Point2D $A, Point2D $B) {
+    $Bx = $B -> get_x();
+    $By = $B -> get_y();
+    $Ax = $A -> get_x();
+    $Ay = $A -> get_y();
+    return ($Bx - $Ax) * ($By - $Ay);
+}
+
+echo "Area: " . area($A, $B) . "\n";
 
 ?>
