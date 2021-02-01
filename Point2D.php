@@ -2,8 +2,8 @@
 
 class Point2D {
 
-    private int $x;
-    private int $y;
+    public int $x;
+    public int $y;
 
     public function __construct(int $x, int $y) {
         $this -> x = $x;
