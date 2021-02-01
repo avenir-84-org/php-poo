@@ -10,6 +10,11 @@ class Point2D {
         $this -> y = $y;
     }
 
+    public function randomize() {
+        $this -> x = random_int(0, 10);
+        $this -> y = random_int(0, 10);
+    }
+
     public function __toString() {
         return "(" . $this -> x . ", " . $this -> y . ")";
     }

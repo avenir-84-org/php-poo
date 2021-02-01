@@ -12,7 +12,8 @@ echo $p1 -> distance($p2)."\n";
 
 $points = [];
 for ($i = 0; $i < 10; ++$i) {
-    $p = new Point2D(random_int(0, 10), -random_int(0, 10));
+    $p = new Point2D(0, 0);
+    $p -> randomize();
     $points[$i] = $p;
 }
 
