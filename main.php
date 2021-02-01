@@ -38,7 +38,9 @@ echo "Area: " . area($A, $B) . "\n";
  * 
  */
 
-$colp = new ColoredPoint2D(4, 5, "Red");
-echo "ColP: " . $colp . " - finally!\n";
+$rp = new ColoredPoint2D(4, 5, "Red");
+echo "rp: " . $rp . " - finally!\n";
+$gp = new ColoredPoint2D(14, 15, "Green");
+echo "gp: " . $gp . " - finally!\n";
 
 ?>
