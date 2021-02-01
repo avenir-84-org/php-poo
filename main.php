@@ -12,10 +12,10 @@ function distance2D($xa, $xb, $ya, $yb) {
 }
 
 function distance2D_v2(Point2D $a, Point2D $b) : float {
-    $xa = $a -> x;
-    $xb = $b -> x;
-    $ya = $a -> y;
-    $yb = $b -> y;
+    $xa = $a -> get_x();
+    $xb = $b -> get_x();
+    $ya = $a -> get_y();
+    $yb = $b -> get_y();
     return sqrt(($xa-$xb) ** 2 + ($ya-$yb) ** 2);
 }
 

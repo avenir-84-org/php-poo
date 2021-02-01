@@ -2,8 +2,8 @@
 
 class Point2D {
 
-    public int $x;
-    public int $y;
+    private int $x;
+    private int $y;
 
     public function __construct(int $x, int $y) {
         $this -> x = $x;
@@ -12,6 +12,22 @@ class Point2D {
 
     public function __toString() {
         return "(" . $this -> x . ", " . $this -> y . ")";
+    }
+
+    public function get_x() : int {
+        return $this -> x;
+    }
+
+    public function set_x(int $x) : void {
+        $this -> x = $x;
+    }
+
+    public function get_y() : int {
+        return $this -> y;
+    }
+
+    public function set_y(int $y) : void {
+        $this -> y = $y;
     }
 
 }
