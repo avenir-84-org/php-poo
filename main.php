@@ -10,12 +10,15 @@ echo $p2."\n";
 
 echo $p1 -> distance($p2)."\n";
 
-$p = new Point2D(2, 0);
-$a = new Point2D(2, 0);
-
+$points = [];
 for ($i = 0; $i < 10; ++$i) {
-    $p -> set_y($i);
-    echo $p -> distance($a)."\n";
+    $p = new Point2D(random_int(0, 10), -random_int(0, 10));
+    $points[$i] = $p;
 }
+
+foreach ($points as $p) {
+    echo $p."\n";
+}
+
 
 ?>
