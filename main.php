@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-require("Point2D.php");
+require("ColoredPoint2D.php");
 
 /*
 Exercice: écrivez un programme qui génère:
@@ -30,5 +30,15 @@ function area(Point2D $A, Point2D $B) {
 }
 
 echo "Area: " . area($A, $B) . "\n";
+
+
+/**
+ * Exercice: créer une nouvelle classe ColoredPoint2D
+ * pour représenter un point d'une couleur particulière.
+ * 
+ */
+
+$colp = new ColoredPoint2D(4, 5, "red");
+echo "ColP: " . $colp . "\n";
 
 ?>
