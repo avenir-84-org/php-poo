@@ -42,5 +42,7 @@ $rp = new ColoredPoint2D(4, 5, "Red");
 echo "rp: " . $rp . " - finally!\n";
 $gp = new ColoredPoint2D(14, 15, "Green");
 echo "gp: " . $gp . " - finally!\n";
+$mp = new ColoredPoint2D(14, 15, "Magenta");
+echo "mp: " . $mp . " - finally!\n";
 
 ?>
